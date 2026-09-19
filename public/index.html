@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchemeFinder - Intelligent Government Scheme Assistant</title>
+    <meta name="description" content="Discover Indian government schemes tailored to your profile with intelligent eligibility checking, document guides, and multi-language support.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-hands-holding-child"></i>
+                </div>
+                <div class="brand-text">
+                    <h2>SchemeFinder</h2>
+                    <span class="version-tag">Local AI Assistant</span>
+                </div>
+            </div>
+
+            <nav class="nav-menu">
+                <button class="nav-item active" data-tab="chat-tab" id="nav-chat">
+                    <i class="fa-solid fa-comments"></i>
+                    <span data-i18n="nav_chat">AI Assistant</span>
+                </button>
+                <button class="nav-item" data-tab="eligibility-tab" id="nav-check">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                    <span data-i18n="nav_check">Eligibility Test</span>
+                </button>
+                <button class="nav-item" data-tab="directory-tab" id="nav-directory">
+                    <i class="fa-solid fa-folder-open"></i>
+                    <span data-i18n="nav_directory">Scheme Directory</span>
+                </button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="status-indicator">
+                    <span class="status-dot online"></span>
+                    <span class="status-text" id="engine-status" data-i18n="status_engine">Strands Agent Ready</span>
+                </div>
+                <div class="architecture-badge">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <span data-i18n="arch_laptop">Runs on your laptop</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Top Header Bar -->
+            <header class="top-header">
+                <div class="header-title">
+                    <h1 id="page-heading" data-i18n="heading_chat">Government Scheme Assistant</h1>
+                    <p class="subtitle" id="page-subtitle" data-i18n="subtitle_chat">Ask questions or check eligibility in your preferred language</p>
+                </div>
+
+                <div class="header-actions">
+                    <!-- Language Selector Bar (EN / HI / BN) -->
+                    <div class="lang-selector-group">
+                        <span class="lang-label"><i class="fa-solid fa-globe"></i> <span data-i18n="lang_title">Language</span>:</span>
+                        <div class="lang-btn-group">
+                            <button class="lang-btn active" data-lang="en">EN</button>
+                            <button class="lang-btn" data-lang="hi">हिंदी (HI)</button>
+                            <button class="lang-btn" data-lang="bn">বাংলা (BN)</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- TAB 1: AI CHAT ASSISTANT -->
+            <section id="chat-tab" class="tab-pane active">
+                <div class="chat-wrapper">
+                    <!-- Suggested Quick Chips -->
+                    <div class="quick-prompts" id="quick-prompts">
+                        <button class="chip" data-prompt="Am I eligible for PM-Kisan if I am a farmer?">
+                            🌾 <span data-i18n="chip_farmer">PM-Kisan Farmer Eligibility</span>
+                        </button>
+                        <button class="chip" data-prompt="What health insurance schemes cover up to 5 lakh rupees?">
+                            🏥 <span data-i18n="chip_health">Health Insurance Cover</span>
+                        </button>
+                        <button class="chip" data-prompt="Tell me about Mudra loan for starting a small shop.">
+                            🏪 <span data-i18n="chip_loan">Mudra Business Loan</span>
+                        </button>
+                        <button class="chip" data-prompt="Schemes available for female students in West Bengal">
+                            👩‍🎓 <span data-i18n="chip_wb">WB Female Student Schemes</span>
+                        </button>
+                    </div>
+
+                    <!-- Chat Messages Log -->
+                    <div class="chat-log" id="chat-log">
+                        <div class="message assistant">
+                            <div class="avatar"><i class="fa-solid fa-robot"></i></div>
+                            <div class="msg-bubble">
+                                <p data-i18n="welcome_msg">Namaste! I am your <strong>SchemeFinder Assistant</strong>. I can help you search government welfare schemes, verify your eligibility with deterministic rules, and find required documents & application links.</p>
+                                <p class="hint-text" data-i18n="welcome_hint">Try asking a question in English, Hindi, or Bengali, or use the <strong>Eligibility Test</strong> tab for instant evaluation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Input Form -->
+                    <form class="chat-input-area" id="chat-form">
+                        <div class="input-wrapper">
+                            <input type="text" id="chat-input" placeholder="Ask about any scheme, eligibility, or benefits..." autocomplete="off">
+                            <button type="submit" id="send-btn" class="send-btn">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- TAB 2: ELIGIBILITY TEST QUESTIONNAIRE -->
+            <section id="eligibility-tab" class="tab-pane">
+                <div class="form-container">
+                    <div class="form-card">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-user-check"></i> <span data-i18n="form_title">Check Your Scheme Eligibility</span></h3>
+                            <p data-i18n="form_desc">Fill in your basic demographics to run a deterministic check against all verified government schemes.</p>
+                        </div>
+
+                        <form id="eligibility-form" class="grid-form">
+                            <div class="form-group">
+                                <label for="user-age"><i class="fa-solid fa-calendar"></i> <span data-i18n="label_age">Age (Years)</span></label>
+                                <input type="number" id="user-age" min="0" max="110" placeholder="e.g. 28" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="user-income"><i class="fa-solid fa-indian-rupee-sign"></i> <span data-i18n="label_income">Annual Family Income (₹)</span></label>
+                                <input type="number" id="user-income" min="0" step="5000" placeholder="e.g. 150000" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="user-gender"><i class="fa-solid fa-venus-mars"></i> <span data-i18n="label_gender">Gender</span></label>
+                                <select id="user-gender" required>
+                                    <option value="all" data-i18n="opt_all">All / Any</option>
+                                    <option value="male" data-i18n="opt_male">Male</option>
+                                    <option value="female" data-i18n="opt_female">Female</option>
+                                    <option value="other" data-i18n="opt_other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="user-occupation"><i class="fa-solid fa-briefcase"></i> <span data-i18n="label_occupation">Occupation</span></label>
+                                <select id="user-occupation" required>
+                                    <option value="all" data-i18n="occ_all">All / General</option>
+                                    <option value="farmer" data-i18n="occ_farmer">Farmer / Agriculture Worker</option>
+                                    <option value="student" data-i18n="occ_student">Student</option>
+                                    <option value="vendor" data-i18n="occ_vendor">Street Vendor / Shopkeeper</option>
+                                    <option value="self_employed" data-i18n="occ_self">Self-Employed / Entrepreneur</option>
+                                    <option value="unemployed" data-i18n="occ_unemployed">Unemployed</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="user-state"><i class="fa-solid fa-location-dot"></i> <span data-i18n="label_state">State of Residence</span></label>
+                                <select id="user-state" required>
+                                    <option value="all" data-i18n="state_all">All India (Central Schemes)</option>
+                                    <option value="West Bengal">West Bengal</option>
+                                    <option value="Delhi">Delhi</option>
+                                    <option value="Maharashtra">Maharashtra</option>
+                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                    <option value="Bihar">Bihar</option>
+                                    <option value="Karnataka">Karnataka</option>
+                                    <option value="Tamil Nadu">Tamil Nadu</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="user-category"><i class="fa-solid fa-users-viewfinder"></i> <span data-i18n="label_category">Category</span></label>
+                                <select id="user-category" required>
+                                    <option value="ALL" data-i18n="cat_all">General / All</option>
+                                    <option value="SC">SC (Scheduled Caste)</option>
+                                    <option value="ST">ST (Scheduled Tribe)</option>
+                                    <option value="OBC">OBC (Other Backward Class)</option>
+                                    <option value="BPL">BPL / Low Income</option>
+                                </select>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn-primary" id="btn-eval">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                    <span data-i18n="btn_evaluate">Evaluate Eligible Schemes</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Evaluation Results Display -->
+                    <div id="eligibility-results" class="results-container hidden">
+                        <div class="results-header">
+                            <h4 data-i18n="results_title">Evaluation Results</h4>
+                            <span id="match-count-badge" class="badge badge-success">0 Matches</span>
+                        </div>
+                        <div id="results-grid" class="schemes-grid"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 3: SCHEME DIRECTORY -->
+            <section id="directory-tab" class="tab-pane">
+                <div class="directory-container">
+                    <div class="search-bar-wrapper">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" id="directory-search" placeholder="Search by scheme name, keyword, or document required...">
+                    </div>
+                    <div id="directory-grid" class="schemes-grid"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Scheme Detail Modal -->
+    <div id="scheme-modal" class="modal-backdrop hidden">
+        <div class="modal-content glass-card">
+            <button class="modal-close" id="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

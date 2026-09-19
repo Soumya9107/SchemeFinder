@@ -1,0 +1,4 @@
+# SchemeFinder Assistant - Dependencies
+opensearch-py>=2.3.0
+pydantic>=2.0.0
+pytest>=7.0.0

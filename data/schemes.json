@@ -1,0 +1,286 @@
+[
+  {
+    "id": "pm_kisan",
+    "name": {
+      "en": "PM Kisan Samman Nidhi",
+      "hi": "प्रधानमंत्री किसान सम्मान निधि",
+      "bn": "প্রধানমন্ত্রী কিষাণ সম্মান নিধি"
+    },
+    "category": "Agriculture",
+    "objective": {
+      "en": "Financial benefit of ₹6,000 per year to small and marginal farmer families.",
+      "hi": "छोटे और सीमांत किसान परिवारों को प्रति वर्ष ₹6,000 का वित्तीय लाभ।",
+      "bn": "ক্ষুদ্র ও প্রান্তিক কৃষক পরিবারকে প্রতি বছর ৬,০০০ টাকার আর্থিক সাহায্য।"
+    },
+    "eligibility": {
+      "min_age": 18,
+      "max_age": 75,
+      "max_income": 300000,
+      "gender": "all",
+      "occupations": ["farmer", "agricultural_worker"],
+      "states": ["all"],
+      "categories": ["all"]
+    },
+    "benefits": {
+      "en": "₹6,000 annually paid in 3 equal installments of ₹2,000 directly into bank accounts.",
+      "hi": "₹6,000 की वार्षिक राशि ₹2,000 की 3 समान किस्तों में बैंक खाते में।",
+      "bn": "বার্ষিক ৬,০০০ টাকা ২,০০০ টাকার ৩টি কিস্তিতে সরাসরি ব্যাঙ্ক অ্যাকাউন্টে।"
+    },
+    "documents": [
+      "Aadhaar Card",
+      "Land Ownership Documents (Khatauni/Khasra)",
+      "Bank Account Passbook with IFSC",
+      "Mobile Number linked with Aadhaar"
+    ],
+    "apply_link": "https://pmkisan.gov.in/"
+  },
+  {
+    "id": "ayushman_bharat",
+    "name": {
+      "en": "Ayushman Bharat - PM-JAY",
+      "hi": "आयुष्मान भारत - प्रधानमंत्री जन आरोग्य योजना",
+      "bn": "আয়ুষ্মান ভারত - প্রধানমন্ত্রী জন আরোগ্য যোজনা"
+    },
+    "category": "Healthcare",
+    "objective": {
+      "en": "Health cover of ₹5 Lakh per family per year for secondary and tertiary care hospitalization.",
+      "hi": "माध्यमिक और तृतीयक अस्पताल में भर्ती के लिए प्रति परिवार ₹5 लाख का स्वास्थ्य बीमा।",
+      "bn": "হাসপাতালে ভর্তির চিকিৎসার জন্য প্রতি পরিবারকে বছরে ৫ লক্ষ টাকার স্বাস্থ্য কভার।"
+    },
+    "eligibility": {
+      "min_age": 0,
+      "max_age": 120,
+      "max_income": 250000,
+      "gender": "all",
+      "occupations": ["all"],
+      "states": ["all"],
+      "categories": ["SECC_2011", "SC", "ST", "BPL", "Low_Income"]
+    },
+    "benefits": {
+      "en": "Cashless and paperless access to healthcare services up to ₹5,00,000 per family per year.",
+      "hi": "प्रति परिवार प्रति वर्ष ₹5,00,000 तक कैशलेस स्वास्थ्य सेवाएं।",
+      "bn": "প্রতি বছর পরিবার পিছু ৫,০০,০০০ টাকা পর্যন্ত ক্যাশলেস স্বাস্থ্য পরিষেবা।"
+    },
+    "documents": [
+      "Aadhaar Card",
+      "Ration Card / Family ID",
+      "Income Certificate / BPL Card",
+      "Mobile Number"
+    ],
+    "apply_link": "https://pmjay.gov.in/"
+  },
+  {
+    "id": "pm_awas_yojana",
+    "name": {
+      "en": "Pradhan Mantri Awas Yojana (PMAY)",
+      "hi": "प्रधानमंत्री आवास योजना",
+      "bn": "প্রধানমন্ত্রী আবাসন যোজনা"
+    },
+    "category": "Housing",
+    "objective": {
+      "en": "Housing for All in urban and rural areas with financial subsidy for pucca houses.",
+      "hi": "पक्के मकानों के निर्माण के लिए वित्तीय सहायता के साथ सभी के लिए आवास।",
+      "bn": "পাকা বাড়ি নির্মাণের জন্য আর্থিক সাহায্য সহ সকলের জন্য আবাসন।"
+    },
+    "eligibility": {
+      "min_age": 21,
+      "max_age": 70,
+      "max_income": 600000,
+      "gender": "all",
+      "occupations": ["all"],
+      "states": ["all"],
+      "categories": ["all"]
+    },
+    "benefits": {
+      "en": "Up to ₹2.67 Lakh interest subsidy on home loans and direct construction assistance.",
+      "hi": "होम लोन पर ₹2.67 लाख तक ब्याज सब्सिडी और प्रत्यक्ष निर्माण सहायता।",
+      "bn": "হোম লোনে ২.৬৭ লক্ষ টাকা পর্যন্ত সুদে ভর্তুকি এবং প্রত্যক্ষ নির্মাণ সহায়তা।"
+    },
+    "documents": [
+      "Aadhaar Card",
+      "Proof of Income (Salary slip / ITR / Affidavit)",
+      "Property / Land documents",
+      "Bank Account details",
+      "Affidavit declaring no existing pucca house in India"
+    ],
+    "apply_link": "https://pmaymis.gov.in/"
+  },
+  {
+    "id": "sukanya_samriddhi",
+    "name": {
+      "en": "Sukanya Samriddhi Yojana (SSY)",
+      "hi": "सुकन्या समृद्धि योजना",
+      "bn": "সুকন্যা সমৃদ্ধি যোজনা"
+    },
+    "category": "Women & Child",
+    "objective": {
+      "en": "Small deposit scheme targeted at the girl child to secure her future education and marriage expense.",
+      "hi": "बालिका की शिक्षा और विवाह व्यय को सुरक्षित करने के लिए लघु बचत योजना।",
+      "bn": "কন্যাসন্তানের শিক্ষা ও বিবাহের খরচ সুরক্ষিত করার জন্য ক্ষুদ্র সঞ্চয় প্রকল্প।"
+    },
+    "eligibility": {
+      "min_age": 0,
+      "max_age": 10,
+      "max_income": 10000000,
+      "gender": "female",
+      "occupations": ["student", "child"],
+      "states": ["all"],
+      "categories": ["all"]
+    },
+    "benefits": {
+      "en": "High compound interest rate (8.2%+ per annum), tax exempt under Section 80C.",
+      "hi": "उच्च चक्रवृद्धि ब्याज दर (8.2%+ प्रति वर्ष), धारा 80C के तहत कर मुक्त।",
+      "bn": "উচ্চ চক্রবৃদ্ধি সুদের হার (৮.২%+ প্রতি বছর), ৮০সি ধারায় কর ছাড়।"
+    },
+    "documents": [
+      "Birth Certificate of Girl Child",
+      "Identity Proof of Parent/Guardian (Aadhaar/PAN)",
+      "Address Proof of Parent/Guardian",
+      "Passport size Photograph"
+    ],
+    "apply_link": "https://www.indiapost.gov.in/Financial/Pages/Content/Post-Office-Savings-Schemes.aspx"
+  },
+  {
+    "id": "pm_mudra_yojana",
+    "name": {
+      "en": "PM MUDRA Yojana (PMMY)",
+      "hi": "प्रधानमंत्री मुद्रा योजना",
+      "bn": "প্রধানমন্ত্রী মুদ্রা যোজনা"
+    },
+    "category": "Micro Finance & Business",
+    "objective": {
+      "en": "Collateral-free loans up to ₹10 Lakh to micro and small non-corporate enterprises.",
+      "hi": "सूक्ष्म और लघु गैर-कॉर्पोरेट उद्यमों को ₹10 लाख तक संपार्श्विक-मुक्त ऋण।",
+      "bn": "ক্ষুদ্র ও মাঝারি নতুন ব্যবসায় ১০ লক্ষ টাকা পর্যন্ত গ্যারান্টি-মুক্ত ঋণ।"
+    },
+    "eligibility": {
+      "min_age": 18,
+      "max_age": 65,
+      "max_income": 2000000,
+      "gender": "all",
+      "occupations": ["entrepreneur", "self_employed", "shopkeeper", "artisan", "vendor"],
+      "states": ["all"],
+      "categories": ["all"]
+    },
+    "benefits": {
+      "en": "Shishu (up to ₹50k), Kishore (₹50k to ₹5L), and Tarun (₹5L to ₹10L) loan categories with low interest.",
+      "hi": "शिशु (₹50k तक), किशोर (₹50k से ₹5L), और तरुण (₹5L से ₹10L) कम ब्याज दर वाले ऋण।",
+      "bn": "শিশু (৫০ হাজার পর্যন্ত), কিশোর (৫০ হাজার থেকে ৫ লক্ষ) এবং তরুণ (৫ লক্ষ থেকে ১০ লক্ষ) কম সুদের ঋণ।"
+    },
+    "documents": [
+      "Aadhaar Card / Voter ID",
+      "Business Plan / Proposal",
+      "Proof of Business Identity & Registration",
+      "6-month Bank Account Statement",
+      "Category certificate (if applicable)"
+    ],
+    "apply_link": "https://www.mudra.org.in/"
+  },
+  {
+    "id": "post_matric_scholarship",
+    "name": {
+      "en": "Post Matric Scholarship for SC/ST/OBC",
+      "hi": "अनुसूचित जाति/जनजाति/ओबीसी उत्तर-मैट्रिक छात्रवृत्ति",
+      "bn": "তফশিলি জাতি/উপজাতি/ওবিসি পোস্ট-ম্যাট্রিক স্কলারশিপ"
+    },
+    "category": "Education",
+    "objective": {
+      "en": "Financial assistance to students belonging to SC/ST/OBC categories for higher studies after 10th grade.",
+      "hi": "10वीं के बाद उच्च शिक्षा प्राप्त कर रहे SC/ST/OBC छात्रों को वित्तीय सहायता।",
+      "bn": "দশম শ্রেণীর পর উচ্চশিক্ষার জন্য তফশিলি জাতি, উপজাতি ও ওবিসি শিক্ষার্থীদের আর্থিক সাহায্য।"
+    },
+    "eligibility": {
+      "min_age": 14,
+      "max_age": 35,
+      "max_income": 250000,
+      "gender": "all",
+      "occupations": ["student"],
+      "states": ["all"],
+      "categories": ["SC", "ST", "OBC"]
+    },
+    "benefits": {
+      "en": "Full tuition fee waiver, maintenance allowance, and book grants directly disbursed to student accounts.",
+      "hi": "पूर्ण शिक्षण शुल्क छूट, रखरखाव भत्ता और पुस्तक अनुदान सीधे बैंक खाते में।",
+      "bn": "সম্পূর্ণ টিউশন ফি মুকুব, রক্ষণাবেক্ষণ ভাতা এবং বইয়ের গ্রান্ট সরাসরি ব্যাঙ্ক অ্যাকাউন্টে।"
+    },
+    "documents": [
+      "Aadhaar Card",
+      "Caste / Category Certificate",
+      "Family Income Certificate (issued by competent authority)",
+      "10th Standard Marksheet & Admission Proof",
+      "Bank Account details linked with Aadhaar"
+    ],
+    "apply_link": "https://scholarships.gov.in/"
+  },
+  {
+    "id": "pm_svanidhi",
+    "name": {
+      "en": "PM SVANidhi (Street Vendor's AtmaNirbhar Nidhi)",
+      "hi": "पीएम स्वनिधि (स्ट्रीट वेंडर आत्मनिर्भर निधि)",
+      "bn": "পিএম স্বনিধি (রাস্তার হকার স্বনির্ভর নিধি)"
+    },
+    "category": "Livelihood & Micro Credit",
+    "objective": {
+      "en": "Micro-credit facility for street vendors to restart their livelihoods with collateral-free working capital.",
+      "hi": "रेहड़ी-पटरी वालों (स्ट्रीट वेंडरों) को अपना व्यवसाय फिर से शुरू करने के लिए कार्यशील पूंजी ऋण।",
+      "bn": "রাস্তার হকার ও ক্ষুদ্র ব্যবসায়ীদের ব্যবসা পুনরায় চালু করার জন্য গ্যারান্টি-মুক্ত ঋণ।"
+    },
+    "eligibility": {
+      "min_age": 18,
+      "max_age": 70,
+      "max_income": 300000,
+      "gender": "all",
+      "occupations": ["vendor", "street_vendor", "self_employed"],
+      "states": ["all"],
+      "categories": ["all"]
+    },
+    "benefits": {
+      "en": "Initial working capital loan up to ₹10,000 with 7% interest subsidy and cashback on digital transactions.",
+      "hi": "7% ब्याज सब्सिडी और डिजिटल लेनदेन पर कैशबैक के साथ ₹10,000 तक का कार्यशील पूंजी ऋण।",
+      "bn": "৭% সুদে ভর্তুকি এবং ডিজিটাল লেনদেনে ক্যাশব্যাক সহ ১০,০০০ টাকা পর্যন্ত প্রাথমিক ঋণ।"
+    },
+    "documents": [
+      "Certificate of Vending / Identity Card issued by Urban Local Body (ULB)",
+      "Aadhaar Card",
+      "Bank Account Passbook",
+      "Mobile Number"
+    ],
+    "apply_link": "https://pmsvanidhi.mohua.gov.in/"
+  },
+  {
+    "id": "annapurna_yojana",
+    "name": {
+      "en": "Annapurna Yojana (West Bengal)",
+      "hi": "अन्नपूर्णा योजना (पश्चिम बंगाल)",
+      "bn": "অন্নপূর্ণা যোজনা (পশ্চিমবঙ্গ)"
+    },
+    "category": "Women Welfare & Financial Security",
+    "objective": {
+      "en": "Financial assistance scheme to female heads of households in West Bengal.",
+      "hi": "पश्चिम बंगाल में परिवारों की महिला प्रमुखों को वित्तीय सहायता योजना।",
+      "bn": "পশ্চিমবঙ্গের পরিবারগুলির গৃহকর্ত্রী ও মহিলাদের আর্থিক সহায়তার জন্য বিশেষ রাজ্য প্রকল্প।"
+    },
+    "eligibility": {
+      "min_age": 25,
+      "max_age": 60,
+      "max_income": 300000,
+      "gender": "female",
+      "occupations": ["all"],
+      "states": ["West Bengal", "WB", "west bengal"],
+      "categories": ["all"]
+    },
+    "benefits": {
+      "en": "₹1,000 per month for SC/ST category women and ₹500 per month for General category women.",
+      "hi": "SC/ST वर्ग की महिलाओं को ₹1,000/माह और सामान्य वर्ग की महिलाओं को ₹500/माह।",
+      "bn": "তফশিলি জাতি/উপজাতির মহিলাদের মাসে ১,২০০/১,০০০ টাকা এবং সাধারণ পরিবারের মহিলাদের মাসে ১,০০০/৫০০ টাকা।"
+    },
+    "documents": [
+      "Swasthya Sathi Card",
+      "Aadhaar Card",
+      "SC/ST Certificate (for higher slab)",
+      "Bank Passbook (single account in applicant's name)",
+      "Passport Size Photograph"
+    ],
+    "apply_link": "https://bsk.wb.gov.in/"
+  }
+]

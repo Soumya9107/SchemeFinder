@@ -1,0 +1,44 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  SchemeFinder - Local AI Scheme Assistant API (SAM CLI)
+
+Globals:
+  Function:
+    Timeout: 30
+    MemorySize: 256
+    Runtime: python3.13
+    Environment:
+      Variables:
+        OPENSEARCH_URL: http://host.docker.internal:9200
+
+Resources:
+  SchemeFinderFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./
+      Handler: src.app.lambda_handler
+      Events:
+        ChatApi:
+          Type: Api
+          Properties:
+            Path: /chat
+            Method: post
+        CheckApi:
+          Type: Api
+          Properties:
+            Path: /check
+            Method: post
+        SchemesApi:
+          Type: Api
+          Properties:
+            Path: /schemes
+            Method: get
+
+Outputs:
+  SchemeFinderApi:
+    Description: "API Gateway endpoint URL for Local / Production environment"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/chat"
+  SchemeFinderFunction:
+    Description: "SchemeFinder Lambda Function ARN"
+    Value: !GetAtt SchemeFinderFunction.Arn
