@@ -33,6 +33,7 @@ services:
     environment:
       - 'OPENSEARCH_HOSTS=["http://opensearch-node:9200"]'
       - DISABLE_SECURITY_PLUGIN=true
+      - DISABLE_SECURITY_DASHBOARDS_PLUGIN=true
     networks:
       - opensearch-net
 

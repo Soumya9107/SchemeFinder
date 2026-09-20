@@ -17,9 +17,16 @@
       "max_age": 75,
       "max_income": 300000,
       "gender": "all",
-      "occupations": ["farmer", "agricultural_worker"],
-      "states": ["all"],
-      "categories": ["all"]
+      "occupations": [
+        "farmer",
+        "agricultural_worker"
+      ],
+      "states": [
+        "all"
+      ],
+      "categories": [
+        "all"
+      ]
     },
     "benefits": {
       "en": "₹6,000 annually paid in 3 equal installments of ₹2,000 directly into bank accounts.",
@@ -52,9 +59,19 @@
       "max_age": 120,
       "max_income": 250000,
       "gender": "all",
-      "occupations": ["all"],
-      "states": ["all"],
-      "categories": ["SECC_2011", "SC", "ST", "BPL", "Low_Income"]
+      "occupations": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "categories": [
+        "SECC_2011",
+        "SC",
+        "ST",
+        "BPL",
+        "Low_Income"
+      ]
     },
     "benefits": {
       "en": "Cashless and paperless access to healthcare services up to ₹5,00,000 per family per year.",
@@ -87,9 +104,15 @@
       "max_age": 70,
       "max_income": 600000,
       "gender": "all",
-      "occupations": ["all"],
-      "states": ["all"],
-      "categories": ["all"]
+      "occupations": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "categories": [
+        "all"
+      ]
     },
     "benefits": {
       "en": "Up to ₹2.67 Lakh interest subsidy on home loans and direct construction assistance.",
@@ -123,9 +146,16 @@
       "max_age": 10,
       "max_income": 10000000,
       "gender": "female",
-      "occupations": ["student", "child"],
-      "states": ["all"],
-      "categories": ["all"]
+      "occupations": [
+        "student",
+        "child"
+      ],
+      "states": [
+        "all"
+      ],
+      "categories": [
+        "all"
+      ]
     },
     "benefits": {
       "en": "High compound interest rate (8.2%+ per annum), tax exempt under Section 80C.",
@@ -158,9 +188,19 @@
       "max_age": 65,
       "max_income": 2000000,
       "gender": "all",
-      "occupations": ["entrepreneur", "self_employed", "shopkeeper", "artisan", "vendor"],
-      "states": ["all"],
-      "categories": ["all"]
+      "occupations": [
+        "entrepreneur",
+        "self_employed",
+        "shopkeeper",
+        "artisan",
+        "vendor"
+      ],
+      "states": [
+        "all"
+      ],
+      "categories": [
+        "all"
+      ]
     },
     "benefits": {
       "en": "Shishu (up to ₹50k), Kishore (₹50k to ₹5L), and Tarun (₹5L to ₹10L) loan categories with low interest.",
@@ -194,9 +234,17 @@
       "max_age": 35,
       "max_income": 250000,
       "gender": "all",
-      "occupations": ["student"],
-      "states": ["all"],
-      "categories": ["SC", "ST", "OBC"]
+      "occupations": [
+        "student"
+      ],
+      "states": [
+        "all"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC"
+      ]
     },
     "benefits": {
       "en": "Full tuition fee waiver, maintenance allowance, and book grants directly disbursed to student accounts.",
@@ -230,9 +278,17 @@
       "max_age": 70,
       "max_income": 300000,
       "gender": "all",
-      "occupations": ["vendor", "street_vendor", "self_employed"],
-      "states": ["all"],
-      "categories": ["all"]
+      "occupations": [
+        "vendor",
+        "street_vendor",
+        "self_employed"
+      ],
+      "states": [
+        "all"
+      ],
+      "categories": [
+        "all"
+      ]
     },
     "benefits": {
       "en": "Initial working capital loan up to ₹10,000 with 7% interest subsidy and cashback on digital transactions.",
@@ -265,9 +321,17 @@
       "max_age": 60,
       "max_income": 300000,
       "gender": "female",
-      "occupations": ["all"],
-      "states": ["West Bengal", "WB", "west bengal"],
-      "categories": ["all"]
+      "occupations": [
+        "all"
+      ],
+      "states": [
+        "West Bengal",
+        "WB",
+        "west bengal"
+      ],
+      "categories": [
+        "all"
+      ]
     },
     "benefits": {
       "en": "₹1,000 per month for SC/ST category women and ₹500 per month for General category women.",
@@ -282,5 +346,46 @@
       "Passport Size Photograph"
     ],
     "apply_link": "https://bsk.wb.gov.in/"
+  },
+  {
+    "id": "pm_kisan_saathi",
+    "name": {
+      "en": "PM Kisan Saathi",
+      "hi": "पीएम किसान साथी",
+      "bn": "পিএম কিষাণ সাথী"
+    },
+    "category": "Agriculture & IT",
+    "objective": {
+      "en": "Providing digital tools and weather-based agro-advisory services to farmers.",
+      "hi": "किसानों को डिजिटल उपकरण और मौसम-आधारित कृषि-सलाहकार सेवाएँ प्रदान करना।",
+      "bn": "কৃষকদের ডিজিটাল সরঞ্জাম ও আবহাওয়ার পূর্বাভাস সহ কৃষি-পরামর্শ পরিষেবা প্রদান।"
+    },
+    "eligibility": {
+      "min_age": 18,
+      "max_age": 75,
+      "max_income": 300000,
+      "gender": "all",
+      "occupations": [
+        "farmer",
+        "agricultural_worker"
+      ],
+      "states": [
+        "all"
+      ],
+      "categories": [
+        "all"
+      ]
+    },
+    "benefits": {
+      "en": "Access to weather forecasts, market prices, and crop-specific advisories via SMS/App.",
+      "hi": "SMS/ऐप के माध्यम से मौसम के पूर्वानुमान, बाजार मूल्यों और फसल-विशिष्ट सलाह तक पहुंच।",
+      "bn": "এসএমএস/অ্যাপের মাধ্যমে আবহাওয়ার পূর্বাভাস, বাজারের দাম এবং ফসল-ভিত্তিক পরামর্শের সুবিধা।"
+    },
+    "documents": [
+      "Aadhaar Card",
+      "Land Ownership Documents (Khatauni/Khasra)",
+      "Mobile Number linked with Aadhaar"
+    ],
+    "apply_link": "https://pmkisan.gov.in/"
   }
 ]
