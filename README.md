@@ -88,14 +88,48 @@ Copy `.env.example` or set the following variables as needed:
 
 ## Running with OpenSearch (Optional)
 
-To start the local OpenSearch cluster and OpenSearch Dashboards:
+SchemeFinder features an optional enterprise full-text search capability powered by **OpenSearch** and **OpenSearch Dashboards**.
+
+### 1. Overview & Search Architecture
+- **Full-Text Multi-Match**: When OpenSearch is active, search queries perform weighted multi-field matching:
+  - `name.*` (3x weight multiplier)
+  - `objective.*` (2x weight multiplier)
+  - `category`, `benefits.*`, and `documents`
+- **Automatic Auto-Indexing**: Upon starting `local_server.py`, the application checks connection to OpenSearch on `http://localhost:9200`. If available, it automatically creates/updates the `government_schemes` index with scheme records from `data/schemes.json`.
+- **Graceful Local Fallback**: If OpenSearch is stopped or unreachable, SchemeFinder transparently falls back to its built-in local token-matching algorithm without disruption or code changes.
+
+### 2. How to Run OpenSearch
+
+#### Step 1: Start Docker Containers
+Ensure Docker Desktop or Docker engine is running, then launch the single-node OpenSearch cluster and Dashboards container:
 ```bash
 docker-compose up -d
 ```
-- OpenSearch: `http://localhost:9200`
-- OpenSearch Dashboards: `http://localhost:5601`
 
-The application automatically connects to OpenSearch on startup if the container is running and indexes `data/schemes.json`.
+#### Step 2: Access Endpoints
+- **OpenSearch Cluster API**: `http://localhost:9200`
+- **OpenSearch Dashboards**: `http://localhost:5601`
+
+#### Step 3: Run SchemeFinder
+Start the backend server as usual:
+```bash
+python local_server.py
+```
+You will see log confirmation that SchemeFinder successfully connected to OpenSearch and indexed `data/schemes.json`.
+
+### 3. Service Management & Troubleshooting
+- **Check Container Status**:
+  ```bash
+  docker-compose ps
+  ```
+- **View Container Logs**:
+  ```bash
+  docker-compose logs -f opensearch-node
+  ```
+- **Stop Containers**:
+  ```bash
+  docker-compose down
+  ```
 
 ---
 
